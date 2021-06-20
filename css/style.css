@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #23263a;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.animated {
+  opacity: 1 !important;
+}
+
+.page {
+  opacity: 0;
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.page__header header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.page__header header h1 {
+  color: #ff4a57;
+}
+
+.page__header header h2 {
+  letter-spacing: 1px;
+}
+
+.page__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.page__icon {
+  font-size: 40px;
+  margin: 0 20px;
+}
+
+.page__icon a {
+  -webkit-transition: color .4s;
+  transition: color .4s;
+  text-decoration: none;
+  color: white;
+}
+
+.page__icon a:hover {
+  color: #ff4a57;
+}
+
+.page .triangle {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.page .triangle--small {
+  position: absolute;
+  right: 0;
+  bottom: 12%;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+@media (min-width: 500px) {
+  .page__header header h1 {
+    font-size: 50px;
+  }
+  .page__header header h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page__header header h1 {
+    font-size: 66px;
+  }
+  .page__header header h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
